@@ -1,0 +1,42 @@
+{
+  "name": "fishmail",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Renovamen <renovamenzxh@gmail.com>",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "postinstall": "husky install",
+    "lint": "eslint --ext .js,.vue ./",
+    "start": "nuxt start"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix --ext .js,.vue ./"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.7.8",
+    "axios": "^0.21.4",
+    "babel-eslint": "^10.1.0",
+    "core-js": "^3.18.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.18.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "nuxt": "^2.15.8",
+    "oh-vue-icons": "^0.4.7",
+    "prettier": "^2.4.1",
+    "sort-package-json": "^1.52.0",
+    "stylus": "^0.55.0",
+    "stylus-loader": "^4.3.1"
+  },
+  "devDependencies": {}
+}
